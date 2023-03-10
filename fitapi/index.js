@@ -20,9 +20,9 @@ app.get("/knockknock", (req, res) => res.send("Who is there"));
 app.get("/getURL", (req, res) => {
     const oauth2Client = new google.auth.OAuth2(
         //clientID
-        "653131972289-hsig12tptfbb4m2t8fktvpvk4i6oljgk.apps.googleusercontent.com",
+       "",
         //client secret
-        "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",
+        "",
         //redirect url
         "http://localhost:8080/steps"
     )
@@ -52,9 +52,9 @@ app.get("/steps", async (req, res) => {
     const code = new URLSearchParams(queryURL.query).get("code");
     const oauth2Client = new google.auth.OAuth2(
         //clientID
-        "653131972289-hsig12tptfbb4m2t8fktvpvk4i6oljgk.apps.googleusercontent.com",
+       "",
         //client secret
-        "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",
+        "",
         //redirect url
         "http://localhost:8080/steps"
     )
